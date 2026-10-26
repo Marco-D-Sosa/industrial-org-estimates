@@ -54,7 +54,7 @@ En el mismo conjunto de datos, la demanda se estima con variables instrumentales
 
 El proyecto se basa en bibliotecas estándar de ciencia de datos y econometría en Python, incluyendo `pandas`, `statsmodels`, `linearmodels`, `scipy` y `pyblp`.
 
-Para instalar las dependencias exactas, ejecute el siguiente comando en su terminal:
+Para instalar las dependencias exactas, ejecuta el siguiente comando en la terminal:
 
 ```bash
 pip install -r requirements.txt
