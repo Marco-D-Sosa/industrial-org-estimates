@@ -1,13 +1,13 @@
 # Kit de Herramientas de Estimaciones de Organización Industrial
 
 ![Spatial Competition Map](Los_Angeles_Map.jfif)
-*(Leyenda: Visualización de la concentración espacial del mercado generada por `spatial_competition.py`)*
+*(Leyenda: Visualización de densidad de locales y optimización de red física generada por spatial_competition.py)*
 
 ## 📊 Resumen Ejecutivo (Valor de Negocio)
 
 Este repositorio proporciona un kit de herramientas basado en Python para automatizar y escalar análisis económicos utilizados en **estrategias de precios, consultoría antimonopolio y competencia de mercado**.
 
-Lleva los análisis que comúnmente se realizan en hojas de cálculo a Python, de modo que sean replicables y rápidos de volver a ejecutar cuando cambian los supuestos o los datos. Los scripts abordan problemas típicos de organización industrial: sensibilidad de la demanda y del precio, concentración de mercado, impacto de fusiones y competencia espacial.
+Lleva los análisis que comúnmente se realizan en hojas de cálculo a Python, de modo que sean replicables y rápidos de volver a ejecutar cuando cambian los supuestos o los datos. Los scripts abordan problemas típicos de organización industrial: sensibilidad de la demanda y del precio, concentración de mercado, impacto de fusiones y optimización de localización espacial.
 
 ## 💻 Estructura del Repositorio
 
@@ -15,7 +15,7 @@ Lleva los análisis que comúnmente se realizan en hojas de cálculo a Python, d
 * `NEIO/`: Contiene conjuntos de datos y scripts para estimar y graficar funciones de demanda y costo marginal bajo varias formas funcionales. NEIO significa *Nueva Organización Industrial Empírica* (por sus siglas en inglés), un enfoque que estima la demanda y los costos marginales a partir de los precios y cantidades observadas en el mercado (el conjunto de datos aquí es puramente ficticio, generado para una descripción general inicial).
 * `concentration.py`: Evalúa la concentración del mercado utilizando métricas estándar de la industria (p. ej., HHI).
 * `mergers_and_acquisitions.py`: Simula escenarios de fusiones y adquisiciones (M&A) para proyectar cambios en la participación y estructura del mercado.
-* `spatial_competition.py`: Modela la competencia espacial utilizando la obtención automatizada de conjuntos de datos y herramientas de visualización geoespacial (ver mapa arriba).
+* `spatial_competition.py`: Evalúa la localización y densidad de sucursales utilizando la obtención automatizada de conjuntos de datos y herramientas de visualización geoespacial para detectar zonas de saturación (canibalización) o espacios de expansión (whitespace) (ver mapa arriba).
 * `network_effects.py`: Evalúa las externalidades de red (utilizando datos de ventas de videojuegos) para comprender la dinámica de adopción de productos.
 * `rejoinder_to_graddy_1995.py`: Analiza los datos del mercado de pescado de Fulton (Graddy, 1995) utilizando variables instrumentales (VI / IV) para estimar las curvas de demanda.
 
@@ -27,7 +27,7 @@ Lleva los análisis que comúnmente se realizan en hojas de cálculo a Python, d
 | ¿Cómo responde la demanda al precio y cuánto cuesta abastecerla? | `NEIO/` | Fijación de precios, análisis de márgenes |
 | ¿Qué tan concentrado o competitivo es un mercado? | `concentration.py` | Evaluación de mercado, benchmarking competitivo |
 | ¿Una fusión le daría a la empresa combinada margen para subir los precios? | `mergers_and_acquisitions.py` | Due diligence de fusiones y adquisiciones, consultoría antimonopolio |
-| ¿Dónde se ubican las tiendas de la competencia y quién domina cada área? | `spatial_competition.py` | Ubicación de tiendas, planificación de expansión |
+| ¿Dónde hay riesgo de canibalización entre sucursales y dónde hay oportunidades de expansión espacial (whitespace)? | spatial_competition.py | Optimización de huella física (Retail footprint), análisis de saturación |
 | ¿Un producto se vuelve más valioso a medida que más personas lo usan? | `network_effects.py` | Estrategia de adopción de productos y plataformas |
 | ¿Es confiable una estimación de la demanda cuando los precios y las ventas se influyen mutuamente? | `rejoinder_to_graddy_1995.py` | Cualquier estimación de demanda a partir de datos de ventas |
 
